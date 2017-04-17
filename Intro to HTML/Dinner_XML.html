@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Plain HTML Dinner Outline</title>
+    </head>
+    <body>
+        <h1>
+            Notice: the XML will "work", just not the way we expect it to
+        </h1>
+        <h2>Open up the browser dev tools and take a look at the elements!</h2>
+        <hr>
+
+        <dinner>
+            <guests>
+                <guest id="1" type="child">Lily</guest>
+                <guest id="0" type="adult">Chris</guest>
+                <guest id="1" type="adult">Ruthie</guest>
+            </guests>
+            <drinks>
+                <drink for="0">British Bitter</drink>
+                <drink for="2">Orange Juice</drink>
+                <drink for="1">Hefeweizen</drink>
+            </drinks>
+            <courses>
+                <appetizers>
+                    <dish>Wings</dish>
+                    <dish>Gyoza</dish>
+                </appetizers>
+                <entrees>
+                    <dish for="1">Tofu Curry</dish>
+                    <dish for="2">Mac ‚Äòn Cheese</dish>
+                    <dish for="0">Steak Fajitas</dish>
+                </entrees>
+                <desserts>
+                    <dish for="1">Ice Cream</dish>
+                    <dish for="0">Sorbet</dish>
+                    <dish for="2">Cookie</dish>
+                </desserts>
+            </courses>
+        </dinner>
+
+        <hr>
+        <p>
+            HTML is just a specialized form of XML, so clients that consume the html document (clients that consume the html doument is just a fancy way of saying "internet browsers, certain text editors, etc. Stuff that will open your html file so you can see it or use it") will still be able to read the xml data.
+        </p>
+        <p>
+            The reason we're only seeing the content of the elements is because the element names we're using aren't ones that browsers understand.
+        </p>
+        <p>
+            Any client that can consume HTML knows that certain html elements should be drawn on the screen in specific ways. Elements that the client doesn't understand just renders out.
+        </p>
+    </body>
+</html>

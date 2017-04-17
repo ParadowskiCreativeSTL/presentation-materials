@@ -1,0 +1,21 @@
+<dinner>
+    <orders>
+        <guest id="0" type="adult" name="Chris">
+            <drink>British Bitter</drink>
+            <appetizer>Wings</appetizer>
+            <entree>Steak Fajitas</entree>
+            <dessert>Sorbet</dessert>
+        </guest>
+        <guest id="1" type="adult" name="Ruthie">
+            <drink>Hefeweizen</drink>
+            <appetizer>Gyoza</appetizer>
+            <entree>Tofu Curry</entree>
+            <dessert>Ice Cream</dessert>
+        </guest>
+        <guest id="2" type="child" name="Lily">
+            <drink>Orange Juice</drink>
+            <entree>Mac 'n Cheese</entree>
+            <dessert>Cookie</dessert>
+        </guest>
+    </orders>
+</dinner>

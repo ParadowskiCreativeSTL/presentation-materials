@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Dinner!</title>
+        <link rel="stylesheet" type="text/css" href="dinner.css">
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Dinner Outline</h1>
+            <div class="content">
+                <div class="left-bar">
+                    <h2>Guests</h2>
+                    <div class="guest-buttons">
+                        <button
+                            v-for="guest in guests"
+                            @click="showGuestsItems(guest.id)"
+                            :class="{'selected': selectedGuest === guest.id}"
+                        >
+                            {{guest.name}}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="right-bar">
+                    <section>
+                        <h2>Drinks</h2>
+                        <ul>
+                            <li v-for="drink in drinks" :class="selectedItem(drink.guestId)">{{drink.name}}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Appetizers</h2>
+                        <ul>
+                            <li v-for="appetizer in food.appetizers" :class="selectedItem(appetizer.guestId)">{{appetizer.name}}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Entrees</h2>
+                        <ul>
+                            <li v-for="entree in food.entrees" :class="selectedItem(entree.guestId)">{{entree.name}}</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Desserts</h2>
+                        <ul>
+                            <li v-for="dessert in food.desserts" :class="selectedItem(dessert.guestId)">{{dessert.name}}</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="dinner.js"></script>
+    </body>
+</html>
